@@ -12,13 +12,23 @@
     transition-duration: 0.4s;
 }
 
-.buttonFacebook {
-  background-image:url('https://i.pinimg.com/originals/89/6b/0c/896b0c1cc89b48c9463635e80e65f4fc.png');
+.buttonLinkedin{
+  background-image:url('https://www.fetor.org/wp-content/uploads/2017/09/LinkedIn.jpg');
   margin-right: 5px;
   background-repeat:no-repeat;
   background-position:center;
-  height: 85%;
-  width:60px;
+  height: 84%;
+  width:54px;
+  background-size: 50px 50px;
+}
+
+.buttonFacebook {
+  background-image:url('https://www.tuexpertoapps.com/wp-content/uploads/2015/10/facebook-paper-011.jpg');
+  margin-right: 5px;
+  background-repeat:no-repeat;
+  background-position:center;
+  height: 84%;
+  width:54px;
   background-size: 50px 50px;
 }
 
@@ -308,6 +318,24 @@
       right: 120px;
       transform: rotate(-5deg);
     }
+
+    .button{
+      font-size: 14px;
+      padding: 9px 24px;
+    }
+
+    .buttonFacebook{
+      height: 64%;
+      width:34px;
+      background-size: 50px 50px;
+    }
+
+    .buttonLinkedin{
+      height: 64%;
+      width:34px;
+      background-size: 50px 50px;
+    }
+
   }
 
   @media screen and (max-width: 575px) {
@@ -322,13 +350,14 @@
 <div class="toolbar" role="banner">
   <img
     width="12%"
-    alt="Angular Logo"
+    alt="banner"
     src="https://www.concordia.gob.ar/sites/all/themes/programar/images/arg-programa.png"
   />
-  <span>Hola Pepe</span>
+  <span>Programador Flores Jose</span>
     <div class="spacer"></div>
-    <button class="buttonFacebook" onclick="location.href='https://www.facebook.com/jose.flores.73700/'">
-                           
+    <button class="buttonLinkedin" onclick="location.href='https://www.linkedin.com/in/jose-andres-flores-37a730140'">                      
+    </button>
+    <button class="buttonFacebook" onclick="location.href='https://www.facebook.com/jose.flores.73700/'">                      
     </button>
 
     <button class="button">
@@ -336,9 +365,25 @@
     </button>
 </div>
 
+
+<div style="margin-top: 50px;">
+  <img width="100%" height="400px" alt="presentacion"
+  src="https://img.freepik.com/fotos-premium/programadores-que-desarrollan-codigos-sus-computadoras_1423-3556.jpg?w=2000"/>
+</div>
+
+
 <div class="content" role="main">
 
-
+  <!--Acerca De-->
+  <app-acercade></app-acercade>
+  <!--Experiencia-->
+  <app-experiencia></app-experiencia>
+  <!--Educacion-->
+  <app-educacion></app-educacion>
+  <!--Hard&SoftSkill-->
+  <app-hard></app-hard>
+  <!--Proyectos-->
+  <app-proyectos></app-proyectos>
 
   <svg id="clouds" xmlns="http://www.w3.org/2000/svg" width="2611.084" height="485.677" viewBox="0 0 2611.084 485.677">
     <title>Gray Clouds Background</title>

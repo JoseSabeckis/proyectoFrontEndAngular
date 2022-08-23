@@ -1,17 +1,15 @@
 <style>
   /* mi desarollo */
 
-  @media (max-width:770px){
-     #imgPresentacion{
-        height: 10%;
-        width: 100%;
-     }
-  }
+#imgPresentacion{
+  height: 400px;
+}
 
   .button {
     background-color: #4CAF50; /* Green */
     margin-bottom: 3px;
     margin-right: 5px;;
+    margin-top: 3px;
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -19,6 +17,27 @@
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
+}
+
+  @media (max-width:770px){
+     #imgPresentacion{
+        height: 10%;
+        width: 100%;
+     }
+  }
+
+@media(max-width:305px){
+
+.buttonLinkedin{
+  height: 44%;
+  width:14px;
+}
+
+.buttonFacebook{
+  height: 44%;
+  width:14px;
+}
+
 }
 
 .buttonLinkedin{
@@ -72,14 +91,14 @@
   }
 
   .toolbar {
-    position: absolute;
+
     top: 0;
     left: 0;
     right: 0;
     height: 60px;
     display: flex;
     align-items: center;
-    background-color: #1976d2;
+    background-color: #3a6896;
     color: white;
     font-weight: 600;
   }
@@ -358,7 +377,7 @@
 </style>
 
 <!-- Toolbar -->
-<div class="toolbar" role="banner">
+<div class="toolbar">
   <img
     width="12%"
     alt="banner"

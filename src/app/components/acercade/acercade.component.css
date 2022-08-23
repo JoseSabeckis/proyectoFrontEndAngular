@@ -1,0 +1,30 @@
+div{
+    background-color:bisque;
+    text-align: center;
+}
+.row{
+    padding: 20px;
+}
+
+#nombre{
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#fotoPrincipal{
+    border-radius: 99%;
+    box-shadow: 3px 3px 3px grey;
+}
+
+@media(max-width:767px)
+{
+    #fotoPrincipal{
+        margin-left: 50%;;
+    }
+}
+
+@media(max-width:576px){
+    #fotoPrincipal{
+        margin-left: 1%;
+    }
+}

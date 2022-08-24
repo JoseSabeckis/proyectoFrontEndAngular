@@ -1,0 +1,11 @@
+div{
+    background-color:bisque;
+    text-align: center;
+}
+
+footer{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 4px #0000;
+}

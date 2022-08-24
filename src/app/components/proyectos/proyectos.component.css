@@ -1,0 +1,25 @@
+.row{
+    padding: 21px;
+}
+
+div{
+    background-color:bisque;
+    text-align: center;
+}
+
+.centrado{
+
+    width: 50%;
+    height: 50%;
+    margin-left: auto; 
+    margin-right: auto;
+    text-align: center;
+}
+
+@media(min-width:770px){
+    .centrado{
+
+        width: 80%;
+        height: 80%;
+    }
+}

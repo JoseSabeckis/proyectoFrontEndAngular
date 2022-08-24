@@ -1,0 +1,21 @@
+#linkedin{
+    background-image:url('https://www.fetor.org/wp-content/uploads/2017/09/LinkedIn.jpg');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: 50px 50px;
+
+}
+#facebook{
+    background-image:url('https://www.tuexpertoapps.com/wp-content/uploads/2015/10/facebook-paper-011.jpg');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: 50px 50px;
+}
+
+button{
+    margin-top: 15px;
+    padding-right: 5px;
+    align-content:right;
+    width: 60%;
+    height: 60%;
+}

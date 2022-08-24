@@ -9,6 +9,7 @@ import { HardComponent } from './components/hard/hard.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { FormsModule } from '@angular/forms';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FormsModule } from '@angular/forms';
     ExperienciaComponent,
     EducacionComponent,
     HardComponent,
-    ProyectosComponent
+    ProyectosComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

@@ -1,9 +1,32 @@
 <div class="row">
     <h1>--Educacion--</h1>
+
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-dark" routerLink="/cargarEducacion" *ngIf="isLogged">
+            Nueva Educacion
+        </button>
+    </div>
+
     <div class="col-lg-11">
-        <ul><li>
-           <h2>Educacion 1 -</h2><h4>Anios</h4>
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, in. Et odit error tenetur cumque velit facilis neque vero rem, iusto omnis, alias fugit optio distinctio eveniet, corporis autem adipisci.</p> 
-        </li></ul>
+        
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Educacion of educacion">
+                    <td>{{Educacion.nombreEducacion}}</td>
+                    <td>{{Educacion.descripcionEducacion}}</td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-light" routerLink="/editareducacion/{{Educacion.id}}" >
+                        <i class="bi bi-pencil"></i>Editar
+                    </button>
+                    </td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-danger" (click)="delete(Educacion.id)" >
+                        <i class="bi bi-x-octagon-fill"></i>Borrar
+                    </button>
+                </td>
+                </tr>
+            </tbody>
+        </table>
+
     </div>
 </div>

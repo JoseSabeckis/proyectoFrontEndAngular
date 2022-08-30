@@ -17,6 +17,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { interceptorProvider } from './service/interceptor-service';
 import { NuevaExperienciaComponent } from './components/experiencia/nueva-experiencia/nueva-experiencia.component';
 import { ModificarExperienciaComponent } from './components/experiencia/modificar-experiencia/modificar-experiencia.component';
+import { NuevaEducacionComponent } from './components/educacion/nueva-educacion/nueva-educacion.component';
+import { ModificarEducacionComponent } from './components/educacion/modificar-educacion/modificar-educacion.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { ModificarExperienciaComponent } from './components/experiencia/modifica
     HomeComponent,
     LoginComponent,
     NuevaExperienciaComponent,
-    ModificarExperienciaComponent
+    ModificarExperienciaComponent,
+    NuevaEducacionComponent,
+    ModificarEducacionComponent
   ],
   imports: [
     BrowserModule,
